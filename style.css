@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Apply Arial and generic sans-serif to the entire page */
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+}
+
+/* Header Styles */
+header {
+    background-color: #4287f5; /* Header background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content Styles */
+.widget {
+    background-color: #ffffff; /* Widget background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for widgets */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.widget.fade-in {
+    opacity: 1;
+}
+
+/* Widget Title Styles */
+h2 {
+    color: #4287f5; /* Widget title color */
+    margin-bottom: 10px;
+}
+
+/* Widget Container Styles */
+.widget-container {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4287f5; /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
+
+/* Widget Links Styles */
+a {
+    color: #4287f5; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom Styles for the iframe (third widget) */
+iframe {
+    border: none;
+    width: 100%;
+}
+
+/* Styles for the new section with embedded external website */
+.external-website {
+    background-color: #fff; /* Background color for the external website section */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.external-website.fade-in {
+    opacity: 1;
+}
+
+/* Custom styles for the embedded external website */
+.external-website object {
+    width: 100%;
+    height: 600px;
+    border: none;
+    background-color: white; /* Set the background color of the embedded website to white */
+}
+
+/* Ensure Arial and generic sans-serif for the embedded website */
+.external-website object body {
+    font-family: Arial, sans-serif;
+}
+
+/* Custom colors for links and text in the embedded website */
+.external-website object a {
+    color: #4287f5; 
+    text-decoration: none;
+}
+
+.external-website object a:hover {
+    text-decoration: underline;
+}
+
+.external-website object p {
+    color: #333; 
+}
+
